@@ -4,6 +4,8 @@ build-backend = "maturin"
 
 [project]
 name = "label-studio-brush-rle-rs"
+authors = [{ name = "teepoy" }]
+readme = "README.md"
 requires-python = ">=3.8"
 classifiers = [
     "Programming Language :: Rust",
@@ -11,7 +13,11 @@ classifiers = [
     "Programming Language :: Python :: Implementation :: PyPy",
 ]
 dynamic = ["version"]
-dependencies = ["numpy>=1.24.4"]
+dependencies = ["numpy>=1.24.4,<3.0.0"]
+
+[project.urls]
+Homepage = "https://github.com/teepoy/label-studio-brush-rle-rs"
+Repository = "https://github.com/teepoy/label-studio-brush-rle-rs"
 [tool.maturin]
 features = ["pyo3/extension-module"]
 

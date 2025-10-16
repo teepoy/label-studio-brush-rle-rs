@@ -1,5 +1,7 @@
 # label-studio-brush-rle-rs
 
+Speedup decode_rle (~100x) and encode_rle (~3x) by put it in rust extension.
+
 A community-maintained Rust acceleration layer for Label Studio's brush RLE encoder/decoder. It mirrors the reference implementation that ships with Label Studio while delivering faster encode/decode routines via PyO3 bindings.
 
 ## Installation
@@ -29,10 +31,3 @@ assert np.array_equal(decoded, flattened)
 ```
 
 The functions fall back to the original Python implementation when the extension is unavailable, so you can safely import them in environments without a local build.
-
-## Contributing
-
-- Run the test suite: `uv run pytest`
-- Rebuild the extension in editable mode: `uv run maturin develop`
-
-Issues and pull requests are welcome, especially for platform support feedback and performance tweaks.

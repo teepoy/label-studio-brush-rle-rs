@@ -11,7 +11,7 @@ from hypothesis import given, settings, strategies as st
 
 MODULE_PATH = (
     Path(__file__).resolve().parents[1]
-    / "example"
+    / "original-code-for-reference"
     / "label_studio_sdk"
     / "converter"
     / "brush.py"
