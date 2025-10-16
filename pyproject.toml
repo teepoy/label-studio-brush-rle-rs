@@ -5,6 +5,7 @@ build-backend = "maturin"
 [project]
 name = "label-studio-brush-rle-rs"
 authors = [{ name = "teepoy" }]
+description = "Rust implementation of run-length encoding for brush masks in Label Studio for speed."
 readme = "README.md"
 requires-python = ">=3.8"
 classifiers = [
