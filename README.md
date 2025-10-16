@@ -1,5 +1,7 @@
 # label-studio-brush-rle-rs
 
+[![CI](https://github.com/teepoy/label-studio-brush-rle-rs/actions/workflows/CI.yml/badge.svg)](https://github.com/teepoy/label-studio-brush-rle-rs/actions/workflows/CI.yml)
+
 Speedup decode_rle (~100x) and encode_rle (~3x) by put it in rust extension.
 
 A community-maintained Rust acceleration layer for Label Studio's brush RLE encoder/decoder. It mirrors the reference implementation that ships with Label Studio while delivering faster encode/decode routines via PyO3 bindings.
